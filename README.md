@@ -1,12 +1,12 @@
-# raki-matrimony-docs
+# Raki Matrimony Documentation
 
 A opensource matrimony service 
 
 ## Disclaimer
-Please done push AI generated slop codes
+Please don't push AI generated slop codes.
 Human contributions only
 
 ## Author
-<Rakesh Nagarajan>rakesh.core01@gmail.com
+rakesh.core01@gmail.com<Rakesh Nagarajan>
 
 A part of Rakesh Foundation

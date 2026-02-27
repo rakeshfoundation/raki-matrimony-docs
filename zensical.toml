@@ -1,0 +1,109 @@
+[project]
+site_name =  "Raki Matrimony"
+site_description = "Opensource Matrimony site"
+site_author = "Rakesh Nagarajan"
+copyright = "&copy; 2026 Rakesh Foundation"
+dev_addr = "localhost:8000"
+extra_css = ["stylesheets/extra.css"]
+repo_url = "https://github.com/RakeshFoundation/"
+
+nav = [
+  {"GitHub Repo" = "https://github.com/zensical/docs"},
+  {"Home" = "index.md"},
+  {"Getting Started" = "getting-started/index.md"},
+  {"About" = [
+     "about/index.md",
+     "about/vision.md",
+     "about/team.md"
+  ]}
+]
+
+extra_javascript = [
+    "https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js",
+    "javascripts/tablesort.js"
+]
+
+[project.markdown_extensions.admonition]
+[project.markdown_extensions.pymdownx.details]
+[project.markdown_extensions.pymdownx.superfences]
+custom_fences = [
+  { name = "mermaid", class = "mermaid", format = "pymdownx.superfences.fence_code_format" }
+]
+
+[project.markdown_extensions.attr_list]
+[project.markdown_extensions.tables]
+[project.markdown_extensions.pymdownx.inlinehilite]
+[project.markdown_extensions.pymdownx.snippets]
+[project.markdown_extensions.pymdownx.highlight]
+anchor_linenums = true
+line_spans = "__span"
+pygments_lang_class = true
+
+[project.markdown_extensions.pymdownx.tabbed]
+alternate_style = true
+
+[project.markdown_extensions.pymdownx.tabbed.slugify]
+object = "pymdownx.slugs.slugify"
+kwds = { case = "lower" }
+
+
+[project.theme]
+variant = "modern"
+font.text = "Inter"
+language = "en"
+logo = "images/logo.png"
+icon.logo= "lucide/smile"
+favicon = "images/favicon.png"
+custom_dir = "docs/overrides"
+features = [
+    "navigation.instant",
+    "navigation.instant.progress",
+    "navigation.tracking",
+    "navigation.tabs",
+    "navigation.tabs.sticky",
+    "navigation.sections",
+    "navigation.path",
+    "navigation.top",
+    "search.highlight",
+    "announce.dismiss",
+    "content.code.copy",
+    "content.code.select",
+    "content.code.annotate",
+    "content.tabs.link",
+
+]
+
+
+# Palette toggle for light mode
+[[project.theme.palette]]
+media = "(prefers-color-scheme: light)"
+scheme = "default"
+toggle.icon = "lucide/sun"
+toggle.name = "Switch to dark mode"
+
+# Palette toggle for dark mode
+[[project.theme.palette]]
+media = "(prefers-color-scheme: dark)"
+scheme = "slate"
+toggle.icon = "lucide/moon"
+toggle.name = "Switch to light mode"
+primary = "orange"
+accent = "red"
+
+
+
+[project.extra]
+homepage = "https://rakifoundation.com"
+generator = false
+
+[project.extra.tags]
+Compatibility = "compat"
+
+
+[[project.extra.social]]
+icon = "fontawesome/brands/x-twitter"
+link = "https://x.com/zensical"
+
+[[project.extra.social]]
+icon = "fontawesome/solid/paper-plane"
+link = "mailto:rakesh.core01@gmail.com"
